@@ -1,0 +1,51 @@
+
+/* reset padding on parent div */
+.img-container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* media query to change behavior of image/image containers on small screens */
+@media only screen and (min-width: 768px) {
+  .col-md-4 {
+    -ms-flex:0 0 30%;
+    flex:0 0 30%;
+    max-width:30%;
+  }
+}
+
+.bg-red {
+  background-color: #e3d3d3;
+}
+
+.text-burgandy a {
+  color: #a27878;
+}
+
+.text-burgandy a:hover {
+  color: #9c4d65;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.return {
+  border-radius: 10px 0px 0px 0px;
+  position: fixed;
+  background-color: #ebebe0;
+  bottom: 0;
+  right: 0;
+  padding: 5px 15px 5px 10px;
+  z-index: 2;
+  color: #a27878;
+  cursor: pointer;
+}
+
+.return:hover {
+  color: #9c4d65;
+  background-color: #e0e0d1;
+}

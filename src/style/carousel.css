@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-family: 'Do Hyeon', sans-serif;
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after,
+.carousel-control-prev-icon:after {
+  font-size: 80px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+}

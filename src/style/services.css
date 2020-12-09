@@ -1,0 +1,9 @@
+img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 585px) {
+  .container > div.my-4 {
+    margin: 5%;
+  }
+}
