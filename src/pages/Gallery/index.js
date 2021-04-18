@@ -12,7 +12,6 @@ const Gallery = props => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = e => {
-    console.log(e);
     setSrc(e.target.attributes.src.value);
     setShow(true)
   };
@@ -26,6 +25,8 @@ const Gallery = props => {
   const bullet = {
     "color": "#a27878"
   }
+
+  const flex = navigator.userAgent.toLowerCase().indexOf("safari") !== -1 ? "display-flex" : "d-flex";
 
   return(
     <div>
@@ -77,9 +78,9 @@ const Gallery = props => {
       </div>
 
       <div className="row mb-2 mx-4">
-        {sources.map( (source, index) => {
+        { sources.map( (source, index) => {
             return (
-              <div src={`/images/${dirName}/${source}`} key={index} className="col-sm-12 col-md-4 bg-red d-flex rounded img-container mb-4" onClick={handleShow}>
+              <div src={`/images/${dirName}/${source}`} key={index} className={'col-sm-12 col-md-4 bg-red rounded img-container mb-4 ' + flex} onClick={handleShow}>
                 <Image classes="rounded my-auto mx-auto" source={`/images/${dirName}/${source}`} alternate={"Example of AJA " + name} key={index} />
               </div>
             )
