@@ -11,13 +11,14 @@
   display: -webkit-flexbox;
 }
 
-/* .no-d-flex {
-  display: table-cell;
+.row {
+  flex-direction: column
 }
 
-.no-d-flex img {
-  margin: 0 auto;
-} */
+.display-flex img {
+  top: 50%;
+  bottom: 50%;
+}
 
 /* media query to change behavior of image/image containers on small screens */
 @media only screen and (min-width: 768px) {
